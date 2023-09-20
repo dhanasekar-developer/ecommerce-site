@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.heading,
+.empty {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Righteous', cursive;
+}
+
+#shopingCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addCartItems {
+    margin: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    width: 500px;
+    display: flex;
+}
+
+.addCartItems>img {
+    width: 100px;
+}
+
+@media all and (max-width: 530px) {
+    .addCartItems {
+        width: 400px;
+    }
+
+    .cart_desc>div>p {
+        font-size: .9rem;
+    }
+
+    .addCartItems>img {
+        width: 80px;
+    }
+
+}
+
+@media all and (max-width: 430px) {
+    .addCartItems {
+        width: 380px;
+        margin: 10px;
+
+    }
+
+    .cart_desc>div>p {
+        font-size: .75rem;
+    }
+
+}
+
+@media all and (max-width: 380px) {
+    .addCartItems {
+        width: 360px;
+    }
+}
+
+
+
+@font-face {
+    font-family: Bainsley_Bold;
+    src: url('../Fonts/Bainsley_Bold.otf');
+}
+
+@font-face {
+    font-family: cunia;
+    src: url('../Fonts/cunia.ttf');
+}
+
+.cart_desc {
+    display: flex;
+
+}
+
+.cart_desc>div {
+    display: flex;
+
+}
+
+.cart_desc>div>p {
+    margin: 0 5px;
+    font-weight: bold;
+    font-family: cunia;
+}
+
+.cancel_btn {
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    font-size: 1.8rem;
+    margin: 0;
+    color: red;
+    font-weight: bold;
+}
+
+.checkout_btn,
+.clearCart_btn {
+
+    font-weight: bold;
+    padding: 7px 15px;
+    transition: .5s;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clearCart_btn {
+    color: #000;
+    background-color: red;
+    border: none;
+}
+
+.checkout_btn {
+    color: #000;
+    background-color: rgb(4, 171, 4);
+    border: none;
+    margin-left: 20px;
+}
+
+.checkout_btn:hover {
+    transform: scale(1.05);
+}
+
+.checkout_btn:active {
+    transform: scale(1);
+}
+
+.clearCart_btn:hover {
+    transform: scale(1.05);
+}
+
+.clearCart_btn:active {
+    transform: scale(1);
+}
+
+.productsPage {
+    background-color: #90e7f8;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #000;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .5s;
+}
+
+.productsPage:hover {
+    transform: scale(1.03);
+}
+
+.productsPage:active {
+    transform: scale(1);
+}
+
+.total {
+    background-color: aqua;
+    border: 2px solid rgb(2, 126, 160);
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.quantity {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: 2px solid rgb(156, 155, 155);
+    padding: 2px 0;
+
+}

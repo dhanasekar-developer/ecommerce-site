@@ -1,0 +1,113 @@
+@font-face {
+    font-family: airstrikeb3d;
+    src: url('../Fonts/airstrikeb3d.ttf');
+}
+
+.signin_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 10px 0;
+}
+
+.middle_signin_form {
+    background: #fff;
+    height: auto;
+    width: 350px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+
+}
+
+.middle_signin_form>.inside_signin_form {
+    padding: 30px;
+    background: #fff;
+    inset: 4px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.signin>.form_head {
+    font-size: 2rem;
+    padding-left: 0px;
+    font-family: airstrikeb3d;
+
+}
+
+.signin>input,
+#signinsubmitbtn,
+.loginbtn {
+    width: 250px;
+    height: 35px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: transparent;
+}
+
+#signinsubmitbtn {
+    margin-bottom: 20px;
+}
+
+.name_input,
+.email_input,
+.password_input,
+.repeatPassword_input {
+    margin-bottom: 10px;
+
+}
+
+.signin>#signinsubmitbtn {
+    margin-top: 15px;
+    background-color: #00d5ff;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.signin>#signinsubmitbtn:hover {
+    background-color: #00d5ff;
+}
+
+.signin>#signinsubmitbtn:active {
+    transform: translateY(1px);
+}
+
+.signin>.loginbtn {
+    border: none;
+    color: dodgerblue;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 0px;
+}
+
+.user {
+    text-align: center;
+}
+
+#nameAlert,
+#emailAlert,
+#passwordAlert,
+#repeatPasswordAlert,
+#emailValidateAlert {
+    color: red;
+    text-align: center;
+}
+
+@media all and (max-width: 400px) {
+
+    .signin>input,
+    #signinsubmitbtn {
+        width: 220px;
+    }
+
+    .signin_form {
+        padding: 20px !important;
+    }
+
+    .middle_signin_form>.inside_signin_form {
+        padding: 30px 10px;
+    }
+}

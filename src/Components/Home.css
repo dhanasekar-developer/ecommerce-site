@@ -1,0 +1,96 @@
+@font-face {
+    font-family: cunia;
+    src: url("../Fonts/cunia.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+body{
+    /* background-color: rgb(214, 255, 255); */
+    background-color: rgb(239, 237, 237);
+    overflow-x: hidden;
+}
+
+.home_background >img{
+   width: 100%;
+   max-height: 100vh;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.slick-slide>div {
+    margin: 0 10px;
+}
+.slick-list {
+    margin: 0 -10px;
+}
+.avail_list{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin: 20px;
+    margin-bottom: 0px !important;
+    padding: 20px;
+    padding-bottom: 40px !important;
+    height: auto;
+}
+.avail_slider{
+    width: 90%;
+}
+.awail_list_product{
+    max-width: 130px;
+}
+.awail_list_img{
+    width: 130px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.awail_list_img>img{
+    width: 100%;
+    border-radius: 20px;
+}
+.awail_list_img>img:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+.avail_product_name{
+    padding-top: 10px;
+    font-family: 'Coiny', cursive;
+    font-weight: 100;
+    color: rgb(0, 128, 255);
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.poduct_h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-family: cunia;
+}
+#carousel>img{
+    width: 100%;
+    background-size: cover;
+}
+.carousel{
+    margin: 20px 10px;
+}
+@media all and (max-width:1000px) {
+    .awail_list_img{
+        max-width: 100px;
+    }
+    .awail_list_product{
+        max-width: 100px;
+    }
+    .avail_product_name{
+        font-size: 1rem;
+    }
+}@media all and (max-width:700px) {
+    .awail_list_img{
+        max-width: 70px;
+    }
+    .awail_list_product{
+        max-width: 70px;
+        max-height: 50px;
+    }
+    .avail_list{
+        margin: 10px;
+        margin-bottom: 0px !important;
+        padding: 10px;
+        padding-bottom: 30px !important;
+    }
+}

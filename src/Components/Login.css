@@ -1,0 +1,159 @@
+@font-face {
+    font-family: airstrikeb3d;
+    src: url('../Fonts/airstrikeb3d.ttf');
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.middle_form{
+    background: #fff;
+    height: 430px;
+    width: 350px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+.middle_form::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    height: 430px;
+    width: 350px;
+    background-image: linear-gradient(0deg, transparent,transparent, #00d5ff, #00d5ff, #00d5ff);
+    z-index: 1;
+    animation: animate 5s linear infinite;
+    transform-origin: bottom right;
+}
+.middle_form::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    height: 430px;
+    width: 350px;
+    background-image: linear-gradient(0deg, transparent,transparent, #00d5ff, #00d5ff, #00d5ff);
+    z-index: 1;
+    animation: animate 5s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -2.5s;
+}
+.borderline{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.borderline::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    height: 430px;
+    width: 350px;
+    background-image: linear-gradient(0deg, transparent,transparent, red, red, red);
+    z-index: 1;
+    animation: animate 5s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -1.25s;
+}
+.borderline::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    height: 430px;
+    width: 350px;
+    background-image: linear-gradient(0deg, transparent,transparent, red, red, red);
+    z-index: 1;
+    animation: animate 5s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -3.75s;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(359deg);
+    }
+}
+.middle_form>.inside_form{
+    padding: 30px;
+    position: absolute;
+    background: #fff;
+    inset: 4px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+.login>.form_head {
+    font-size: 2rem;
+    padding-left: 5px;
+    font-family: airstrikeb3d;
+    color: #000;
+}
+
+.login>input,
+.loginsubmitbtn,
+.signinbtn {
+    width: 250px;
+    height: 35px;
+    margin-bottom: 15px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: transparent;
+
+}
+
+
+.login>.loginsubmitbtn {
+    margin-top: 15px;
+    background-color: #00d5ff;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.login>.loginsubmitbtn:hover {
+    background-color: #00d5ff;
+}
+
+.login>.loginsubmitbtn:active {
+    transform: translateY(1px);
+}
+
+.login>.signinbtn {
+    border: none;
+    color: dodgerblue;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 0px;
+}
+
+#elseview {
+    text-align: center;
+    padding: 10px 0;
+    color: red;
+}
+
+@media all and (max-width: 400px) {
+
+    .login>input,
+    .loginsubmitbtn {
+        width: 220px;
+    }
+
+    .login_form {
+        padding: 20px;
+    }
+.middle_form>.inside_form{
+    padding: 30px 10px;
+}
+}

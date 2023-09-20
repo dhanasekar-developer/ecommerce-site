@@ -1,0 +1,112 @@
+.products_cart {
+    display: flex;
+    border: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products_cart_item {
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.products_cart_item>h3, h5, .btn{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.products_cart_img {
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.products_cart_img>img {
+    height: 100%;
+    transform: scale(1);
+    transition: .5s;
+    
+}
+.products_cart_img>img:hover{
+    transform: scale(1.2);
+}
+
+button {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+
+}
+.fillterbtn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fillterbtn>button {
+    margin: 20px 10px;
+    width: 120px;
+    font-family: Bainsley_Bold;
+    transition: .5s;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    background-color: #000;
+    color: #00d5ff;
+    border: 3px solid #00d5ff;
+}
+.fillterbtn>button:hover{
+    transform: scale(1.1);
+}
+.fillterbtn>button:active{
+    transform: scale(1);
+}
+@font-face {
+    font-family: Bainsley_Bold;
+    src: url('../Fonts/Bainsley_Bold.otf');
+}
+@font-face {
+    font-family: cunia;
+    src: url('../Fonts/cunia.ttf');
+}
+@font-face {
+    font-family: MoreSugar-Regular;
+    src: url('../Fonts/MoreSugar-Regular.ttf');
+}
+.products_product_desc{
+    font-weight: bold;
+    color: rgb(0, 140, 255);
+    font-family: cunia;
+    font-style: normal;
+}
+.products_product_price{
+    
+    font-family: Bainsley_Bold;
+}
+.products_product_price>button{
+    border: 0px;
+    color: #424242;
+    font-weight: bold;
+}
+.products_cardbtn{
+    /* background-color: rgb(255, 151, 60); */
+    font-family: MoreSugar-Regular;
+    /* border: 2px solid #333; */
+    outline: none;
+    background-color: #000;
+    color: #00d5ff;
+    border: 3px solid #00d5ff;
+    transition: .5s;
+}
+
+.products_cardbtn:hover{
+    transform: scale(1.05);
+}
+.products_cardbtn:active{
+    transform: scale(1);
+}
