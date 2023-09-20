@@ -30,7 +30,7 @@ function AddCart() {
         forceUpdate();
     }
     let checkout = () => {
-        alert('Your products has ordered')
+        alert('Your products has been ordered')
     }
     let increase = (id) => {
         let selectedItem = id;
