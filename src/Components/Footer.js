@@ -5,7 +5,7 @@ import { MdSend } from "react-icons/md";
 
 function Footer() {
     return (
-        <div>
+        <div className='holeFooter'>
 
             <div className='footer_top'>
                 <div className='footer_top_left'>
