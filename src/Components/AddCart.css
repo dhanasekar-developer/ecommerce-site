@@ -174,3 +174,7 @@
     padding: 2px 0;
 
 }
+
+.addToCartPage {
+    min-height: 70vh;
+}

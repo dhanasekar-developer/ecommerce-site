@@ -67,7 +67,7 @@ function AddCart() {
     }).reduce((x, y) => x + y, 0);
 
     return (
-        <div>
+        <div className="addToCartPage">
             <h3 className="heading">Total Amount : ₹{amount}</h3>
             <button className="clearCart_btn" onClick={() => clearCart()}>Clear Cart</button>
             <button className="checkout_btn" onClick={() => checkout()}>Checkout items</button>
