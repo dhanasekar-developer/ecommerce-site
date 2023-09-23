@@ -3,8 +3,6 @@ import { ProductsData } from "./ProductsData.js";
 import { useState } from "react";
 import "./Products.css";
 import { RiShoppingCart2Fill } from "react-icons/ri";
-import Footer from "./Footer";
-import Alert from 'react-bootstrap/Alert';
 
 function Products() {
 
@@ -28,11 +26,7 @@ function Products() {
                 count: 1,
                 qtn: 1,
             })
-            alert("This product added to cart")
-            // return (
-            //     <Alert key='success' variant='success'>
-            //         This is a success alert—check it out!
-            //     </Alert>)
+            alert("This product added to cart");
         }
         else {
             alert('This product already exist in your cart');
