@@ -9,6 +9,7 @@
     align-items: center;
     height: auto;
     margin: 10px 0;
+    min-height: 90vh;
 }
 
 .middle_signin_form {
