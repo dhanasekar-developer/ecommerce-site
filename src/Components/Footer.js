@@ -9,7 +9,7 @@ function Footer() {
 
             <div className='footer_top'>
                 <div className='footer_top_left'>
-                    <img src={require('../Images/logo.png')} height={90} alt="Shopy"/>
+                    <img src={require('../Images/logo.png')} height={90} alt="Shopy" />
                     <div className='footer_emailbar'>
                         <input type='email' name="location" placeholder='Enter email...'></input>
                         <button className="footer_sendbtn"><MdSend size={20} /></button>
@@ -57,11 +57,11 @@ function Footer() {
                     <li>Twitter</li>
                     <li>Youtube</li>
                 </ul>
-                {/* <ul>
-                    <li className='Foot_title'>Available</li>
-                    <li className='stores'><img src={require('../Images/appStore.jpg')} width={150}></img></li>
-                    <li className='stores'><img src={require('../Images/googlePlay.jpg')} width={150}></img></li>
-                </ul> */}
+                <ul className='myDetails'>
+                    <li className='Foot_title'>Developed by</li>
+                    <li>Dhanaseakr.s</li>
+                    <li>dhanasekarsdeveloper@gail.com</li>
+                </ul>
             </div>
         </div>
     )

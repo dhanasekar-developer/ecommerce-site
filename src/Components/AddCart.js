@@ -8,7 +8,6 @@ import { FiPlus, FiMinus } from 'react-icons/fi';
 
 function AddCart() {
     let navigate = useNavigate();
-    const [input, setInput] = useState(0);
     const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
     var basket = JSON.parse(localStorage.getItem('data')) || [];
     if (basket.length === 0) {
@@ -44,7 +43,6 @@ function AddCart() {
         } else {
             search.qtn += 1;
         }
-        totalAmount(id);
         localStorage.setItem("data", JSON.stringify(basket));
         forceUpdate();
     }
@@ -57,25 +55,20 @@ function AddCart() {
         else {
             search.qtn -= 1;
         }
-        totalAmount(id);
         localStorage.setItem("data", JSON.stringify(basket));
         forceUpdate();
 
     }
 
-    let totalAmount = (id) => {
-        let selectedItem = id;
-        let amount = basket.map((e) => {
-            let { id, qtn } = e;
-            let search = ProductsData.find((f) => f.id === id) || [];
-            return qtn * search.price;
-        }).reduce((x, y) => x + y, 0);
-        console.log(amount)
-    }
-    totalAmount();
+    let amount = basket.map((e) => {
+        let { id, qtn } = e;
+        let search = ProductsData.find((f) => f.id === id) || [];
+        return qtn * search.price;
+    }).reduce((x, y) => x + y, 0);
+
     return (
         <div>
-            <h3>Total Amount : ₹{ }</h3>
+            <h3 className="heading">Total Amount : ₹{amount}</h3>
             <button className="clearCart_btn" onClick={() => clearCart()}>Clear Cart</button>
             <button className="checkout_btn" onClick={() => checkout()}>Checkout items</button>
 
@@ -83,12 +76,11 @@ function AddCart() {
                 {basket.map((e) => {
                     let { id, qtn } = e;
                     let search = ProductsData.find((f) => f.id === id) || [];
-                    let { item, desc, price, image } = search;
+                    let { desc, price, image } = search;
                     let keyid = { id } + Math.random();
-                    let name = id * Math.random();
 
                     return <div className="addCartItems" key={keyid}>
-                        <img src={image} />
+                        <img src={image} alt={desc} />
                         <div className="cancel_btn">
                             <IoIosClose onClick={() => removeCart({ id })} />
                         </div>

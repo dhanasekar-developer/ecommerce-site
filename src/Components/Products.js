@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./Products.css";
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import Footer from "./Footer";
-// import Alert from 'react-bootstrap/Alert';
+import Alert from 'react-bootstrap/Alert';
 
 function Products() {
 
@@ -18,17 +18,9 @@ function Products() {
 
     let basket = JSON.parse(localStorage.getItem('data')) || [];
 
-    // function AddedAlert() {
-    //     return (
-    //         <Alert variant="primary">
-    //             <Alert.Heading>This product added to your cart</Alert.Heading>
-    //         </Alert>
-    //     );
-    // }
-
     let addToCart = (id) => {
         let selectedItem = id;
-        console.log(selectedItem.id);
+        // console.log(selectedItem.id);
         let search = basket.find((e) => e.id === selectedItem.id);
         if (search === undefined) {
             basket.push({
@@ -36,7 +28,11 @@ function Products() {
                 count: 1,
                 qtn: 1,
             })
-            alert('This product added to your cart');
+            alert("This product added to cart")
+            // return (
+            //     <Alert key='success' variant='success'>
+            //         This is a success alert—check it out!
+            //     </Alert>)
         }
         else {
             alert('This product already exist in your cart');

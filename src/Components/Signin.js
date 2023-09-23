@@ -37,9 +37,11 @@ function Signin() {
     }
     var userEmail = email.trim();
     const emailVerify = () => {
+        const emailValidateAlert = document.getElementById('emailValidateAlert');
+
         if (userEmail === "") {
             emailAlert.innerHTML = "please enter email";
-
+            emailValidateAlert.innerHTML = '';
         }
         else {
             emailAlert.innerHTML = "";
@@ -75,7 +77,7 @@ function Signin() {
         if (userName !== '' && userEmail !== '' && userPassword !== "" && userPassword === userRepeatPassword) {
             const emailValidateAlert = document.getElementById('emailValidateAlert');
 
-            if (regx.test(emailValidation.value)) {
+            if (regx.test(userEmail)) {
                 await axios.post(URL_API, {
                     name,
                     email,
