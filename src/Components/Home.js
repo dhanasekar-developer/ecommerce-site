@@ -23,7 +23,7 @@ function Home() {
     autoplaySpeed: 1000,
     infinite: true,
     dots: false,
-   
+
     responsive: [
       {
         breakpoint: 1800,
@@ -35,12 +35,12 @@ function Home() {
         },
       },
       {
-          breakpoint: 1500,
-          settings: {
-              slidesToShow: 5,
-              slidesToScroll: 1,
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
 
-          }
+        }
       },
       {
         breakpoint: 1100,
@@ -74,7 +74,7 @@ function Home() {
     <div>
 
       <div className='home_background'>
-        <img src={require('../Images/back23.jpg')} alt="Welcome TO Our Website"/>
+        <img src={require('../Images/back23.jpg')} alt="Welcome TO Our Website" />
       </div>
       <div className="avail_list">
 
@@ -157,7 +157,6 @@ function Home() {
       <TabletCart></TabletCart>
       <CameraCart></CameraCart>
       <HeadphoneCart></HeadphoneCart>
-      <Footer></Footer>
     </div>
   )
 }
