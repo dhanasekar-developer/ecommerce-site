@@ -60,7 +60,7 @@ function Footer() {
                 <ul className='myDetails'>
                     <li className='Foot_title'>Developed by</li>
                     <li>Dhanaseakr.s</li>
-                    <li>dhanasekarsdeveloper@gail.com</li>
+                    <li>dhanasekarsdeveloper@gmail.com</li>
                 </ul>
             </div>
         </div>
