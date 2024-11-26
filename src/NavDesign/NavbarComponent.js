@@ -32,7 +32,8 @@ function NavbarComponent(size) {
                             <div className='search_bar nav_input'>
                                 <input type="text" name="product name" placeholder='Enter Product Name'></input>
                                 <button variant="dark" className="searchbtn">
-                                    <img src={require("../Images/search_icon.png")} alt="search"></img></button>
+                                    <img src={require("../Images/search_icon.png")} alt="search"></img>
+                                </button>
                             </div>
                         </div>
                     </div>
