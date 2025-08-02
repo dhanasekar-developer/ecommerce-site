@@ -72,7 +72,6 @@ function Home() {
 
   return (
     <div>
-
       <div className='home_background'>
         <img src={require('../Images/background.jpg')} alt="Welcome TO Our Website" />
       </div>
