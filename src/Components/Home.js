@@ -73,7 +73,6 @@ function Home() {
   return (
     <div>
       <div className="avail_list">
-
         <Slider {...settings} className="full_slider">
           <div className='awail_list_product'>
             <div className='awail_list_img'>
