@@ -1,4 +1,3 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Home.css"
 import Carousel from 'react-bootstrap/Carousel';
@@ -7,7 +6,6 @@ import LaptopCart from './LaptopCart';
 import TabletCart from './TabletCart';
 import CameraCart from './CameraCart';
 import HeadphoneCart from './HeadphoneCart';
-import Footer from "./Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -72,6 +70,9 @@ function Home() {
 
   return (
     <div>
+       <div className='home_background'>
+          <img src={require('../Images/background.jpg')} alt="Welcome TO Our Website"/>
+        </div>
       <div className="avail_list">
         <Slider {...settings} className="full_slider">
           <div className='awail_list_product'>

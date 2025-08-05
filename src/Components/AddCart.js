@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import { useReducer } from "react";
 import './AddCart.css'
 import { ProductsData } from "./ProductsData";
 import { IoIosClose } from 'react-icons/io';
